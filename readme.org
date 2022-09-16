@@ -1,0 +1,26 @@
+The manuscripts that we publish should use the same "house writing style" to maintain consistency and readability
+
+This document is a collection of common pitfalls that I've encountered over many years of writing and editing scientific publications.
+
+Please use this as a checklist to double check your own writing.
+
+* Units
+** Include a space between a digit and its unit:
+#+begin_quote
++0.5mM IPTG+ should instead be =0.5 mM IPTG=
+#+end_quote
+** Optical density
+Report OD units as follows:
+#+begin_quote
++O.D. of 0.6-0.8+ should instead be OD_600~0.6-0.8
+#+end_quote
+** Temperature
+Report temperature in Celsius as follows. Note that there is no space between the digit and the degree symbol (˚). Include the degree symbol, it is not optional.
+#+begin_quote
+Cells were grown at 18˚C for 4 hours.
+#+end_quote
+* Acronyms and abbreviations
+** Common acronyms that need to be defined at least once
+| IPTG | isopropyl β-d-1-thiogalactopyranoside |
+|      |                                      |
+
