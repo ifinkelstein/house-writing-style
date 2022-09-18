@@ -1,26 +1,41 @@
-The manuscripts that we publish should use the same "house writing style" to maintain consistency and readability
+The manuscripts that we publish should use the same "house writing style" to maintain consistency and readability.
 
 This document is a collection of common pitfalls that I've encountered over many years of writing and editing scientific publications.
 
-Please use this as a checklist to double check your own writing.
+Please use this as a checklist to double check your own writing. Get in the habit of identifying and fixing these common pitfalls early during your writing practice to become a more efficient writer.
 
 * Units
-** Include a space between a digit and its unit:
+** Writing units
+- Include a space between a digit and its unit:
 #+begin_quote
-+0.5mM IPTG+ should instead be =0.5 mM IPTG=
++0.5mM IPTG+ should be =0.5 mM IPTG=
 #+end_quote
+- Use appropriate Greek characters for units:
+#+begin_quote
++5 ul+ should be =5 μl=
+#+end_quote
+
 ** Optical density
 Report OD units as follows:
 #+begin_quote
 +O.D. of 0.6-0.8+ should instead be OD_600~0.6-0.8
 #+end_quote
 ** Temperature
-Report temperature in Celsius as follows. Note that there is no space between the digit and the degree symbol (˚). Include the degree symbol, it is not optional.
+Report temperature in Celsius as follows. Note that there is a space between the digit and the degree symbol (˚). Include the degree symbol, it is not optional.
 #+begin_quote
-Cells were grown at 18˚C for 4 hours.
+Cells were grown at 18 ˚C for 4 hours.
 #+end_quote
+** Centrifugal units
+Do not report centrifugal force in revolutions per minute (RPM). This unit reports how fast the centrifuge is spinning, but is meaningless without knowing the rotor type, angle of rotation, etc. Instead, report the relative centrifugal force (RCF), which refers to the force exerted directly on the sample. Most centrifuges will report the RCF when the rotor setting is set (or ifs a single rotor centrifuge).
+
 * Acronyms and abbreviations
 ** Common acronyms that need to be defined at least once
-| IPTG | isopropyl β-d-1-thiogalactopyranoside |
-|      |                                      |
+#+begin_notes
+Use C-c ^ to sort the org-table
+#+end_notes
+| cryo-EM | cryo-electron microscopy             |
+| DAP     | diaminopimelic acid                  |
+| IPTG    | isopropyl β-d-1-thiogalactopyranoside |
+| LB      | lysogeny broth                       |
+| MBP     | maltose binding protein              |
 
