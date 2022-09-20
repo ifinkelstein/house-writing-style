@@ -78,10 +78,9 @@ The gene expressing /Eubacterium siraeum/ Cas13d (/Es/ Cas13d)  was synthesized 
 | MBP     | maltose binding protein              |
 | CVs     | column volumes                                     |
 
-*** org-table cheatsheet :noexport:
-Use C-c ^ to sort the org-table
-
-
+#+begin_notes
+Note to self: Use C-c ^ to sort the org-table
+#+end_notes
 * Reporting code and other content via GitHub
 Code and some supplemental resources are shared via the [[https://github.com/orgs/finkelsteinlab/][Finkelstein Lab GitHub]] page.
 
@@ -90,3 +89,16 @@ To add to our repository:
 2. Create a *private* repository that will summarize the project. Do not make the repo public unless we're ready to release the manuscript.
 3. *Include a descriptive readme.md file.* The file should describe the main goals of the project, what each module does, and how to cite the resulting manuscript. If the manuscript isn't online yet, include a placeholder or link to bioRxiv.
 4. Let me know when we're ready to make the repository visible. I will fork it to our official GitHub mirror.
+* Figures
+** Software and Templates
+The lab is transitioning to the free, cross-platform [[https://inkscape.org/][Inkscape]] as a drop-in replacement for Adobe Illustrator.
+
+Inkscape has nearly the same functionality, exports standard SVG files, and a robust bookmarking system. And as a bonus, you can actually change the default font!
+
+*** TODO Think about your figure layout
+- two column? 1.5 column? 1 column?
+- add template with some examples
+** TODO Maintain readability
+** TODO Keep figure axes and legends consistent
+** TODO Using color
+
