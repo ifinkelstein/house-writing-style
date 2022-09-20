@@ -36,7 +36,6 @@ The buffer flow rate was 100 µl min^-1 for all washing steps.
 #+end_quote
 - Be consistent about how you report time units in figure axes and methods sections. Decide ahead of time if you're using ~hours, min, sec~ or ~hr, m, s~. I prefer the first, as its a bit more descriptive.
 ** Optical density
-Report optical density (OD) units as follows:
 #+begin_quote
 +O.D. of 0.6-0.8+ should instead be OD_600~0.6-0.8
 #+end_quote
@@ -72,15 +71,16 @@ The gene expressing /Eubacterium siraeum/ Cas13d (/Es/ Cas13d)  was synthesized 
 #+end_quote
 
 ** Define these common acronyms
-#+begin_notes
-Use C-c ^ to sort the org-table
-#+end_notes
 | cryo-EM | cryo-electron microscopy             |
 | DAP     | diaminopimelic acid                  |
 | IPTG    | isopropyl β-d-1-thiogalactopyranoside |
 | LB      | lysogeny broth                       |
 | MBP     | maltose binding protein              |
 | CVs     | column volumes                                     |
+
+*** org-table cheatsheet :noexport:
+Use C-c ^ to sort the org-table
+
 
 * Reporting code and other content via GitHub
 Code and some supplemental resources are shared via the [[https://github.com/orgs/finkelsteinlab/][Finkelstein Lab GitHub]] page.
