@@ -1,3 +1,5 @@
+#+OPTIONS: toc:2
+
 The manuscripts that we publish should use the same "house writing style" to maintain consistency and readability.
 
 This document is a collection of common pitfalls that I've encountered over many years of writing and editing scientific publications.
