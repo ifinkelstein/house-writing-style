@@ -17,6 +17,11 @@ Please use this as a checklist to double check your own writing. Get in the habi
    - [[#organism-names][Organism names]]
    - [[#define-these-common-acronyms][Define these common acronyms]]
 - [[#reporting-code-and-other-content-via-github][Reporting code and other content via GitHub]]
+- [[#figures][Figures]]
+   - [[#software-and-templates][Software and Templates]]
+   - [[#maintain-readability][Maintain readability]]
+   - [[#keep-figure-axes-and-legends-consistent][Keep figure axes and legends consistent]]
+   - [[#using-color][Using color]]
 
 * Units
 ** Writing units
