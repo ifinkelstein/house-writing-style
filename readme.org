@@ -1,10 +1,22 @@
-#+OPTIONS: toc:2
-
+* About
 The manuscripts that we publish should use the same "house writing style" to maintain consistency and readability.
 
-This document is a collection of common pitfalls that I've encountered over many years of writing and editing scientific publications.
+This document is a collection of best practices and common pitfalls that I've encountered over many years of writing and editing scientific publications.
 
 Please use this as a checklist to double check your own writing. Get in the habit of identifying and fixing these common pitfalls early during your writing practice to become a more efficient writer.
+* Table of Contents :TOC_2:
+- [[#about][About]]
+- [[#units][Units]]
+   - [[#writing-units][Writing units]]
+   - [[#optical-density][Optical density]]
+   - [[#temperature][Temperature]]
+   - [[#centrifugal-units][Centrifugal units]]
+- [[#genes][Genes]]
+- [[#proteins][Proteins]]
+- [[#acronyms-and-abbreviations][Acronyms and abbreviations]]
+   - [[#organism-names][Organism names]]
+   - [[#define-these-common-acronyms][Define these common acronyms]]
+- [[#reporting-code-and-other-content-via-github][Reporting code and other content via GitHub]]
 
 * Units
 ** Writing units
