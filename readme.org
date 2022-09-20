@@ -14,9 +14,15 @@ Please use this as a checklist to double check your own writing. Get in the habi
 #+begin_quote
 +5 ul+ should be =5 μl=
 #+end_quote
-
+- Consistently write units that are per unit time or volume. Do not switch styles, as per the example below. I weakly prefer superscripts in the example below.
+#+begin_quote
+The buffer flow rate was 100 µl/min for all washing steps.
+/or/
+The buffer flow rate was 100 µl min^-1 for all washing steps.
+#+end_quote
+- Be consistent about how you report time units in figure axes and methods sections. Decide ahead of time if you're using ~hours, min, sec~ or ~hr, m, s~. I prefer the first, as its a bit more descriptive.
 ** Optical density
-Report OD units as follows:
+Report optical density (OD) units as follows:
 #+begin_quote
 +O.D. of 0.6-0.8+ should instead be OD_600~0.6-0.8
 #+end_quote
@@ -28,8 +34,30 @@ Cells were grown at 18 ˚C for 4 hours.
 ** Centrifugal units
 Do not report centrifugal force in revolutions per minute (RPM). This unit reports how fast the centrifuge is spinning, but is meaningless without knowing the rotor type, angle of rotation, etc. Instead, report the relative centrifugal force (RCF), which refers to the force exerted directly on the sample. Most centrifuges will report the RCF when the rotor setting is set (or ifs a single rotor centrifuge).
 
+* Genes
+- Gene names should be lowercase and italicized.
+#+begin_quote
+CRISPR-transposons do not encode the adaptation genes /cas1/ and /cas2/.
+#+end_quote
+- 
+
+* Proteins
+- Human protein names tend to be ALLCAPS (e.g., DNA2), whereas yeast and other organisms are Upcase (e.g., Dna2).
+- When discussing point mutants, define the mutation at least once using the following convention: NAME(from###to)[. For example: 
+#+begin_quote
+A helicase-deficient DNA2(K654R) mutant decreased resection processivity and velocity.
+#+end_quote
+
 * Acronyms and abbreviations
-** Common acronyms that need to be defined at least once
+** Organism names
+Define organism names, especially when referring to enzymes that were sub-cloned from these organisms. Include at least one definition in the main text---introduction or results---and another in the methods section.
+
+Here is an example from the methods section of a paper:
+#+begin_quote
+The gene expressing /Eubacterium siraeum/ Cas13d (/Es/ Cas13d)  was synthesized (IDT) and cloned into ... 
+#+end_quote
+
+** Define these common acronyms
 #+begin_notes
 Use C-c ^ to sort the org-table
 #+end_notes
@@ -38,4 +66,13 @@ Use C-c ^ to sort the org-table
 | IPTG    | isopropyl β-d-1-thiogalactopyranoside |
 | LB      | lysogeny broth                       |
 | MBP     | maltose binding protein              |
+| CVs     | column volumes                                     |
 
+* Reporting code and other content via GitHub
+Code and some supplemental resources are shared via the [[https://github.com/orgs/finkelsteinlab/][Finkelstein Lab GitHub]] page.
+
+To add to our repository:
+1. Create your own GitHub account.
+2. Create a *private* repository that will summarize the project. Do not make the repo public unless we're ready to release the manuscript.
+3. *Include a descriptive readme.md file.* The file should describe the main goals of the project, what each module does, and how to cite the resulting manuscript. If the manuscript isn't online yet, include a placeholder or link to bioRxiv.
+4. Let me know when we're ready to make the repository visible. I will fork it to our official GitHub mirror.
