@@ -1,11 +1,10 @@
-* About
+
 The manuscripts that we publish should use the same "house writing style" to maintain consistency and readability.
 
 This document is a collection of best practices and common pitfalls that I've encountered over many years of writing and editing scientific publications.
 
 Please use this as a checklist to double check your own writing. Get in the habit of identifying and fixing these common pitfalls early during your writing practice to become a more efficient writer.
 * Table of Contents :TOC_2:
-- [[#about][About]]
 - [[#units][Units]]
    - [[#writing-units][Writing units]]
    - [[#optical-density][Optical density]]
@@ -17,6 +16,7 @@ Please use this as a checklist to double check your own writing. Get in the habi
    - [[#organism-names][Organism names]]
    - [[#define-these-common-acronyms][Define these common acronyms]]
 - [[#reporting-code-and-other-content-via-github][Reporting code and other content via GitHub]]
+- [[#reporting-genomic-datasets][Reporting genomic datasets]]
 - [[#figures][Figures]]
    - [[#software-and-templates][Software and Templates]]
    - [[#maintain-readability][Maintain readability]]
@@ -76,12 +76,14 @@ The gene expressing /Eubacterium siraeum/ Cas13d (/Es/ Cas13d)  was synthesized 
 #+end_quote
 
 ** Define these common acronyms
+| BS^3     | bis(sulfosuccinimidyl)suberate       |
 | cryo-EM | cryo-electron microscopy             |
+| CVs     | column volumes                       |
 | DAP     | diaminopimelic acid                  |
 | IPTG    | isopropyl β-d-1-thiogalactopyranoside |
 | LB      | lysogeny broth                       |
 | MBP     | maltose binding protein              |
-| CVs     | column volumes                                     |
+|         |                                      |
 
 #+begin_notes
 Note to self: Use C-c ^ to sort the org-table
@@ -94,6 +96,14 @@ To add to our repository:
 2. Create a *private* repository that will summarize the project. Do not make the repo public unless we're ready to release the manuscript.
 3. *Include a descriptive readme.md file.* The file should describe the main goals of the project, what each module does, and how to cite the resulting manuscript. If the manuscript isn't online yet, include a placeholder or link to bioRxiv.
 4. Let me know when we're ready to make the repository visible. I will fork it to our official GitHub mirror.
+* Reporting genomic datasets
+The [[https://www.ncbi.nlm.nih.gov/geo/info/overview.html][gene expression omnibus]] (GEO) is an international public repository that archives and freely distributes microarray, next-generation sequencing, and other forms of high-throughput functional genomics data submitted by the research community.
+
+- If your manuscript is re-analyzing prior published date, double check whether its been submitted to GEO. Include GEO accession numbers in a supplemental table.
+
+  
+
+- If your manuscript includes new sequencing data that falls within the GEO mandate, upload it to GEO and report the accession numbers in your manuscript.
 * Figures
 ** Software and Templates
 The lab is transitioning to the free, cross-platform [[https://inkscape.org/][Inkscape]] as a drop-in replacement for Adobe Illustrator.
