@@ -5,27 +5,34 @@ This document is a collection of best practices and common pitfalls that I've en
 
 Please use this as a checklist to double check your own writing. Get in the habit of identifying and fixing these common pitfalls early during your writing practice to become a more efficient writer.
 * Table of Contents :TOC_2:
-- [[#units][Units]]
-   - [[#writing-units][Writing units]]
-   - [[#optical-density][Optical density]]
-   - [[#temperature][Temperature]]
-   - [[#centrifugal-units][Centrifugal units]]
-- [[#genes][Genes]]
-- [[#proteins][Proteins]]
-- [[#acronyms-abbreviations-and-other-common-words][Acronyms, abbreviations, and other common words]]
-   - [[#organism-names][Organism names]]
-   - [[#define-these-common-acronyms][Define these common acronyms]]
-   - [[#common-words][Common words]]
-- [[#reporting-code-and-other-content-via-github][Reporting code and other content via GitHub]]
-- [[#reporting-genomic-datasets][Reporting genomic datasets]]
+- [[#overview][Overview]]
+- [[#authoring-in-latex][Authoring in LaTeX]]
+   - [[#write-section-here][Write section here]]
+- [[#conventions][Conventions]]
+   - [[#units][Units]]
+   - [[#genes][Genes]]
+   - [[#proteins][Proteins]]
+   - [[#acronyms-abbreviations-and-other-common-words][Acronyms, abbreviations, and other common words]]
+   - [[#reporting-code-and-other-content-via-github][Reporting code and other content via GitHub]]
+   - [[#reporting-genomic-datasets][Reporting genomic datasets]]
 - [[#figures][Figures]]
    - [[#software-and-templates][Software and Templates]]
-   - [[#maintain-readability][Maintain readability]]
+   - [[#figure-design][Figure design]]
+   - [[#using-color-effectively][Using color effectively]]
    - [[#keep-figure-axes-and-legends-consistent][Keep figure axes and legends consistent]]
    - [[#using-color][Using color]]
+- [[#citations][Citations]]
+   - [[#tutorials-on-biblatex][Tutorials on BibLaTeX]]
+   - [[#useful-websites-to-convert-citations][Useful websites to convert citations]]
 
-* Units
-** Writing units
+* Overview
+TODO: Write a section on how this document is organized.
+
+* Authoring in LaTeX
+** TODO Write section here
+* Conventions
+** Units
+*** Writing units
 - Include a space between a digit and its unit:
 #+begin_quote
 +0.5mM IPTG+ should be =0.5 mM IPTG=
@@ -41,34 +48,34 @@ The buffer flow rate was 100 µl/min for all washing steps.
 The buffer flow rate was 100 µl min^-1 for all washing steps.
 #+end_quote
 - Be consistent about how you report time units in figure axes and methods sections. Decide ahead of time if you're using ~hours, min, sec~ or ~hr, m, s~. I prefer the first, as its a bit more descriptive.
-** Optical density
+*** Optical density
 #+begin_quote
 +O.D. of 0.6-0.8+ should instead be OD_600~0.6-0.8
 #+end_quote
-** Temperature
+*** Temperature
 Report temperature in Celsius as follows. Note that there is a space between the digit and the degree symbol (˚). Include the degree symbol, it is not optional.
 #+begin_quote
 Cells were grown at 18 ˚C for 4 hours.
 #+end_quote
-** Centrifugal units
+*** Centrifugal units
 Do not report centrifugal force in revolutions per minute (RPM). This unit reports how fast the centrifuge is spinning, but is meaningless without knowing the rotor type, angle of rotation, etc. Instead, report the relative centrifugal force (RCF), which refers to the force exerted directly on the sample. Most centrifuges will report the RCF when the rotor setting is set (or ifs a single rotor centrifuge).
 
-* Genes
+** Genes
 - Gene names should be lowercase and italicized.
 #+begin_quote
 CRISPR-transposons do not encode the adaptation genes /cas1/ and /cas2/.
 #+end_quote
 - 
 
-* Proteins
+** Proteins
 - Human protein names tend to be ALLCAPS (e.g., DNA2), whereas yeast and other organisms are Upcase (e.g., Dna2).
 - When discussing point mutants, define the mutation at least once using the following convention: NAME(from###to)[. For example: 
 #+begin_quote
 A helicase-deficient DNA2(K654R) mutant decreased resection processivity and velocity.
 #+end_quote
 
-* Acronyms, abbreviations, and other common words
-** Organism names
+** Acronyms, abbreviations, and other common words
+*** Organism names
 Define organism names, especially when referring to enzymes that were sub-cloned from these organisms. Include at least one definition in the main text---introduction or results---and another in the methods section.
 
 Here is an example from the methods section of a paper:
@@ -76,7 +83,7 @@ Here is an example from the methods section of a paper:
 The gene expressing /Eubacterium siraeum/ Cas13d (/Es/ Cas13d)  was synthesized (IDT) and cloned into ... 
 #+end_quote
 
-** Define these common acronyms
+*** Define these common acronyms
 | BS^3     | bis(sulfosuccinimidyl)suberate       |
 | cryo-EM | cryo-electron microscopy             |
 | CVs     | column volumes                       |
@@ -89,12 +96,12 @@ The gene expressing /Eubacterium siraeum/ Cas13d (/Es/ Cas13d)  was synthesized 
 #+begin_notes
 Note to self: Use C-c ^ to sort the org-table
 #+end_notes
-** Common words
+*** Common words
 We commonly use the following words in our writing. Please stick with these conventions:
 | *Correct usage* | *Incorrect*            |
 | flowcell      | flow cell; flow-cell |
 |               |                      |
-* Reporting code and other content via GitHub
+** Reporting code and other content via GitHub
 Code and some supplemental resources are shared via the [[https://github.com/orgs/finkelsteinlab/][Finkelstein Lab GitHub]] page.
 
 To add to our repository:
@@ -102,7 +109,7 @@ To add to our repository:
 2. Create a *private* repository that will summarize the project. Do not make the repo public unless we're ready to release the manuscript.
 3. *Include a descriptive readme.md file.* The file should describe the main goals of the project, what each module does, and how to cite the resulting manuscript. If the manuscript isn't online yet, include a placeholder or link to bioRxiv.
 4. Let me know when we're ready to make the repository visible. I will fork it to our official GitHub mirror.
-* Reporting genomic datasets
+** Reporting genomic datasets
 The [[https://www.ncbi.nlm.nih.gov/geo/info/overview.html][gene expression omnibus]] (GEO) is an international public repository that archives and freely distributes microarray, next-generation sequencing, and other forms of high-throughput functional genomics data submitted by the research community.
 
 - If your manuscript is re-analyzing prior published date, double check whether its been submitted to GEO. Include GEO accession numbers in a supplemental table.
@@ -112,14 +119,33 @@ The [[https://www.ncbi.nlm.nih.gov/geo/info/overview.html][gene expression omnib
 - If your manuscript includes new sequencing data that falls within the GEO mandate, upload it to GEO and report the accession numbers in your manuscript.
 * Figures
 ** Software and Templates
-The lab is transitioning to the free, cross-platform [[https://inkscape.org/][Inkscape]] as a drop-in replacement for Adobe Illustrator.
+The lab is transitioning to the free, cross-platform [[https://inkscape.org/][Inkscape]] as a drop-in replacement for [[https://www.adobe.com/products/illustrator.html][Adobe Illustrator]].
 
-Inkscape has nearly the same functionality, exports standard SVG files, and a robust bookmarking system. And as a bonus, you can actually change the default font!
+Inkscape has nearly the same functionality, exports standard SVG files, and a robust bookmarking system. 
 
-*** TODO Think about your figure layout
-- two column? 1.5 column? 1 column?
-- add template with some examples
-** TODO Maintain readability
+As a bonus, Inkscape also has a powerful [[https://wiki.inkscape.org/wiki/Using_the_Command_Line][command line]] interface for adjusting graphic sizes and formats. 
+
+[[figure-template.svg]] is a template that you can use to start designing your figure. It also includes guides for various figure widths, ranging from a single- to 1.5- and two-column formats.
+
+#+CAPTION: Template for creating consistent figures in Inkscape. 
+[[figure-template.png]]
+** Figure design
+Below are a few pointers on designing clean and consistent figures:
+
+- Keep figure axes and legends consistent
+- 
+
+** TODO Using color effectively
 ** TODO Keep figure axes and legends consistent
 ** TODO Using color
+
+* Citations
+Papers that are authored in LaTeX use BibLaTeX for providing citations. BibLaTex is a modern, mature, and highly capable software package. 
+** Tutorials on BibLaTeX
+- [[https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex][Bibliography management with biblatex - Overleaf]]: This is an excellent tutorial that covers the basics of working with BibLaTeX files. I highly recommend this tutorial.
+
+** Useful websites to convert citations
+- [[https://www.doi2bib.org/][doi2bib]]: generate =BibTex= citations from the Digital Object Identifier (DOI)
+- [[https://rintze.zelle.me/ref-extractor/][Reference Extractor]]: upload a =DOCX= or =ODT= document and export the citations as a =BibTeX= file. If using Zotero, you can optionally mark all citations that occur in your Zotero libraries.
+- 
 
