@@ -21,7 +21,7 @@ Please use this as a checklist to hone your own writing. Get in the habit of ide
    - [[#using-color-in-plots-and-figures][Using color in plots and figures]]
 - [[#citations][Citations]]
    - [[#tutorials-on-biblatex][Tutorials on BibLaTeX]]
-   - [[#useful-websites-to-convert-citations][Useful websites to convert citations]]
+   - [[#convert-and-tidy-up-citations][Convert and tidy up citations]]
 
 * Overview
 TODO: Write a section on how this document is organized.
@@ -150,17 +150,42 @@ Below are a few pointers on designing clean and consistent figures:
 ** Using color in plots and figures
 This is a vast topic that cannot be fully explored within the scope of this document. For a concise treatment, please read the following key sections of [[https://clauswilke.com/][Claus Wilke's]] excellent book, [[https://clauswilke.com/dataviz/][Fundamentals of Data Visualization]].
 - [[https://clauswilke.com/dataviz/color-basics.html][Color Basics]]
+   + Claus Wilke's presentation on using colors: [[https://wilkelab.org/SDS375/slides/color-scales.html#48][color scales ]] 
    + Check out the Okabe-Ito scale, which we use frequently in our figures
 - [[https://clauswilke.com/dataviz/color-pitfalls.html][Common Pitfalls of Color Use]]
 
-TODO: Add Inkscape color palettes for Okabe-Ito and other useful color scales.
+*** Okabe-Ito scale
+#+BEGIN_HTML
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-otze{background-color:#e69f00;text-align:left;vertical-align:middle}
+</style>
+<table class="tg">
+<tbody>
+  <tr>
+    <td class="tg-otze">#E69F00</td>
+    <td class="tg-cly1">#56B4E9</td>
+    <td class="tg-0lax">#009E73</td>
+    <td class="tg-0lax">#F0E442</td>
+    <td class="tg-0lax">#0072B2</td>
+    <td class="tg-0lax">#D55E00</td>
+    <td class="tg-0lax">#CC79A7</td>
+    <td class="tg-0lax">Black<br>HEX: #000000<br>RGB: (0, 0, 0)</td>
+  </tr>
+</tbody>
+</table>
+#+END_HTML
+
 * Citations
 Papers that are authored in LaTeX use BibLaTeX for providing citations. BibLaTex is a modern, mature, and highly capable software package. 
 ** Tutorials on BibLaTeX
 - [[https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex][Bibliography management with biblatex - Overleaf]]: This is an excellent tutorial that covers the basics of working with BibLaTeX files. I highly recommend this tutorial.
 
-** Useful websites to convert citations
+** Convert and tidy up citations
 - [[https://www.doi2bib.org/][doi2bib]]: generate =BibTex= citations from the Digital Object Identifier (DOI)
 - [[https://rintze.zelle.me/ref-extractor/][Reference Extractor]]: upload a =DOCX= or =ODT= document and export the citations as a =BibTeX= file. If using Zotero, you can optionally mark all citations that occur in your Zotero libraries.
-- 
+- [[://github.com/FlamingTempura/bibtex-tidy][bibtex-tidy]]: tidy up bib files by removing duplicates, un-needed fields, clean up whitespace, etc. Browser, CLI, and API tools:
+   + [[https://flamingtempura.github.io/bibtex-tidy/index.html?opt=%7B%22modify%22%3Atrue%2C%22curly%22%3Atrue%2C%22numeric%22%3Atrue%2C%22months%22%3Afalse%2C%22space%22%3A2%2C%22tab%22%3Atrue%2C%22align%22%3A13%2C%22duplicates%22%3A%5B%22key%22%5D%2C%22stripEnclosingBraces%22%3Afalse%2C%22dropAllCaps%22%3Afalse%2C%22escape%22%3Afalse%2C%22sortFields%22%3A%5B%22title%22%2C%22shorttitle%22%2C%22author%22%2C%22year%22%2C%22month%22%2C%22day%22%2C%22journal%22%2C%22booktitle%22%2C%22location%22%2C%22on%22%2C%22publisher%22%2C%22address%22%2C%22series%22%2C%22volume%22%2C%22number%22%2C%22pages%22%2C%22doi%22%2C%22isbn%22%2C%22issn%22%2C%22url%22%2C%22urldate%22%2C%22copyright%22%2C%22category%22%2C%22note%22%2C%22metadata%22%5D%2C%22stripComments%22%3Afalse%2C%22trailingCommas%22%3Afalse%2C%22encodeUrls%22%3Afalse%2C%22tidyComments%22%3Atrue%2C%22removeEmptyFields%22%3Afalse%2C%22removeDuplicateFields%22%3Afalse%2C%22lowercase%22%3Atrue%2C%22backup%22%3Atrue%7D][Online BibTeX Tidy:]] In the browser
 
