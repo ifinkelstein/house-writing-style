@@ -155,20 +155,20 @@ This is a vast topic that cannot be fully explored within the scope of this docu
 - [[https://clauswilke.com/dataviz/color-pitfalls.html][Common Pitfalls of Color Use]]
 
 *** Okabe-Ito scale
-#+BEGIN_HTML
-<table>
-  <tr>
-    <td bgcolor="#E69F00">#E69F00</td>
-    <td >#56B4E9 $${\color{red}Red}$$</td>
-    <td >#009E73</td>
-    <td >#F0E442</td>
-    <td >#0072B2</td>
-    <td >#D55E00</td>
-    <td >#CC79A7</td>
-    <td >Black<br>HEX: #000000<br>RGB: (0, 0, 0)</td>
-  </tr>
-</table>
-#+END_HTML
+
+#+DOWNLOADED: screenshot @ 2023-07-28 10:18:57
+#+attr_latex: :width 500cm
+[[file:../../../Dropbox/org-roam/org-pictures/Figures/2023-07-28_10-18-57_screenshot.png]]
+
+| *Name*           | *Hex code*  | *R, G, B (0-255)* |
+| orange         | #E69F00                       | 230, 159, 0     |
+| sky blue       | #56B4E9                       | 86, 180, 233    |
+| bluish green   | #009E73                       | 0, 158, 115     |
+| yellow         | #F0E442                       | 240, 228, 66    |
+| blue           | #0072B2                       | 0, 114, 178     |
+| vermilion      | #D55E00                       | 213, 94, 0      |
+| reddish purple | #CC79A7                       | 204, 121, 167   |
+| black          | #000000                       | 0, 0, 0         |
 
 * Citations
 Papers that are authored in LaTeX use BibLaTeX for providing citations. BibLaTex is a modern, mature, and highly capable software package. 
