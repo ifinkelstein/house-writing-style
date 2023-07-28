@@ -156,25 +156,17 @@ This is a vast topic that cannot be fully explored within the scope of this docu
 
 *** Okabe-Ito scale
 #+BEGIN_HTML
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-otze{background-color:#e69f00;text-align:left;vertical-align:middle}
-</style>
-<table class="tg">
-<tbody>
+<table>
   <tr>
     <td bgcolor="#E69F00">#E69F00</td>
-    <td class="tg-cly1">#56B4E9</td>
-    <td class="tg-0lax">#009E73</td>
-    <td class="tg-0lax">#F0E442</td>
-    <td class="tg-0lax">#0072B2</td>
-    <td class="tg-0lax">#D55E00</td>
-    <td class="tg-0lax">#CC79A7</td>
-    <td class="tg-0lax">Black<br>HEX: #000000<br>RGB: (0, 0, 0)</td>
+    <td >#56B4E9</td>
+    <td >#009E73</td>
+    <td >#F0E442</td>
+    <td >#0072B2</td>
+    <td >#D55E00</td>
+    <td >#CC79A7</td>
+    <td >Black<br>HEX: #000000<br>RGB: (0, 0, 0)</td>
   </tr>
-</tbody>
 </table>
 #+END_HTML
 
