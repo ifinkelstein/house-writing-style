@@ -165,7 +165,7 @@ This is a vast topic that cannot be fully explored within the scope of this docu
 <table class="tg">
 <tbody>
   <tr>
-    <td bgcolor="E69F00">#E69F00</td>
+    <td bgcolor="#E69F00">#E69F00</td>
     <td class="tg-cly1">#56B4E9</td>
     <td class="tg-0lax">#009E73</td>
     <td class="tg-0lax">#F0E442</td>
