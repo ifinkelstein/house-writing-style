@@ -1,4 +1,4 @@
-
+[[./how-to-draw-an-owl.jpg]]
 This document is a collection of best practices and common pitfalls that I've encountered over many years of writing and editing scientific publications.
 
 The manuscripts that we publish should use the same "house writing style" to maintain consistency and readability. In addition, this document describes the tools and workflows that I've refined over the years for smooth scientific authoring.
