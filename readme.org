@@ -159,7 +159,7 @@ This is a vast topic that cannot be fully explored within the scope of this docu
 <table>
   <tr>
     <td bgcolor="#E69F00">#E69F00</td>
-    <td >#56B4E9</td>
+    <td >#56B4E9 $${\color{red}Red}$$</td>
     <td >#009E73</td>
     <td >#F0E442</td>
     <td >#0072B2</td>
