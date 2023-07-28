@@ -155,11 +155,7 @@ This is a vast topic that cannot be fully explored within the scope of this docu
 - [[https://clauswilke.com/dataviz/color-pitfalls.html][Common Pitfalls of Color Use]]
 
 *** Okabe-Ito scale
-
-#+DOWNLOADED: screenshot @ 2023-07-28 10:18:57
-#+attr_latex: :width 500cm
-[[file:../../../Dropbox/org-roam/org-pictures/Figures/2023-07-28_10-18-57_screenshot.png]]
-
+[[./okabe-ito-scale.png]]
 | *Name*           | *Hex code*  | *R, G, B (0-255)* |
 | orange         | #E69F00                       | 230, 159, 0     |
 | sky blue       | #56B4E9                       | 86, 180, 233    |
